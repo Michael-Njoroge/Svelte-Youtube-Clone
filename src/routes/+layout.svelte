@@ -5,9 +5,9 @@
 </script>
 
 <Header/>
-<div class="flex ">
+<div class="flex">
     <SideBar/>
-    <main class="ml-[74px] p-6">
+    <main class="ml-[74px] p-6 flex-1">
         <slot/>
     </main>
 </div>
