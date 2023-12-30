@@ -1,5 +1,5 @@
 <div class="flex gap-3 items-center">
-    <div class="max-w-[360px] w-full justify-center items-center">
+    <div class="max-w-[360px] flex w-full justify-center items-center">
         <img src="/avatar.png" class="w-[136px] h-[136px] rounded-full" alt="">
     </div>
     <div>
