@@ -1,4 +1,6 @@
  <script lang="ts">
+	import ChannelInfo from "$lib/components/ChannelInfo.svelte";
+
     let videoId = ''
  </script>
 
@@ -13,7 +15,9 @@
 
  <div class="max-w-[1150px] px-2 w-full mx-auto">
     <h1 class="text-xl capitalize font-semibold">
-        svelte
+        svelte Rules
     </h1>
-    <div class="flex flex-col md:flex-row gap-5 items-start"></div>
+    <div class="flex flex-col md:flex-row gap-5 items-start">
+        <ChannelInfo/>
+    </div>
  </div>
