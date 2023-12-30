@@ -1,4 +1,4 @@
-<div class="flex gap-3 items-center">
+<a href="/" class="flex gap-3 items-center">
     <div class="max-w-[360px] flex w-full justify-center items-center">
         <img src="/avatar.png" class="w-[136px] h-[136px] rounded-full" alt="">
     </div>
@@ -8,4 +8,4 @@
         <p class="text-gray-600 text-xs">welcome to my channel</p>
     </div>
     <button class="text-sm bg-black text-white ml-auto font-medium rounded-full py-2 px-4">Subscribe</button>
-</div>
+</a>
