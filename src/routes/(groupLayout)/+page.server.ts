@@ -1,5 +1,5 @@
 import { getHomepage } from "$lib/services";
-import { fail } from "@sveltejs/kit";
+import { fail, redirect } from "@sveltejs/kit";
 
 export const load = async () => {
     return {
@@ -16,6 +16,6 @@ export const actions = {
                 error: 'You have an empty search'
             })
         }
-        console.log('called')
+        throw redirect(301,`/results?q=${query}`)
     }
 };

@@ -24,3 +24,19 @@ export const getHomepage =async () => {
         })
     }    
 }
+
+export const getSearch =async ({query,filter}:{query:string; filter:string}) => {
+    try {
+        const result = await axios('search/',{
+            params:{
+            q:query,
+            cursor:filter
+        }
+    })
+    return result.data
+    } catch (e) {
+        throw error(500,{
+            message: 'an error occured'
+        })
+    }  
+}

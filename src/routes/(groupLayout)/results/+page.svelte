@@ -1,6 +1,7 @@
 <script>
 	import ChannelCard from "$lib/components/ChannelCard.svelte";
 	import SearchVideoCard from "$lib/components/SearchVideoCard.svelte";
+    export let data;
 
 </script>
 
