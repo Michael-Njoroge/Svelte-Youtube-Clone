@@ -26,9 +26,10 @@
                                 const searchParams = new URLSearchParams($page.url.search)
                                 searchParams.set('filters',filter.cursorSelect)
                                 goto(`?${searchParams.toString()}`)
-                            }} class="font-medium text-xs capitalize">{filter.label}
-                            class:text-black={filter.selected}
+                            }} class="font-medium text-xs capitalize"                             class:text-black={filter.selected}
                             class:text-gray-700={!filter.selected}
+                            >{filter.label}
+
                         </button>
                         {/each}
                     </div>
