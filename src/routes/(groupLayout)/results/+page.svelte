@@ -15,7 +15,7 @@
     {#if type === 'video'}
     <SearchVideoCard avatar = {video.author.avatar[0].url} badges = {video.badges} views = {video.stats.views} channelName = {video.author.title} descriptionSnippet = {video.descriptionSnippet} publishedTimeText = {video.publishedTimeText} thumbnail = {video.thumbnails[0].url} title = {video.title} videoId = {video.videoId}/>
     {:else if type === 'channel'}
-    <ChannelCard/>
+    <ChannelCard avatar={channel.avatar[0].url} userName={channel.username} descriptionSnippet={channel.descriptionSnippet} subscribers={channel.subscribersText} title={channel.title}/>
     {/if}
 
     {/each}

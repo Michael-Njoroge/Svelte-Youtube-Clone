@@ -24,7 +24,7 @@
 {#each nav as item}
         <a href="/" class="flex items-center flex-col gap-1 py-4 hover:bg-gray-100 rounded-lg">
             <img src= {`/icons/${item.icon}.svg`} alt="">
-            <p>{item.title}</p>
+            <p class="text-xs capitalize">{item.title}</p>
         </a>
 {/each}
 </div>
