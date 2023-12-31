@@ -20,8 +20,8 @@
     <h1 class="text-xl capitalize font-semibold">
         svelte Rules
     </h1>
-    <div class="flex flex-col md:flex-row gap-10 items-start">
-        <div class="flex1">
+    <div class="flex flex-col md:flex-row gap-5 items-start">
+        <div class="flex-1">
         <ChannelInfo/>
         <VideoDescription/>
         <Comments/>
