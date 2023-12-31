@@ -1,5 +1,5 @@
 <script lang="ts">
-    let showMore = false
+    let showMore = false;
 </script>
 
 <div

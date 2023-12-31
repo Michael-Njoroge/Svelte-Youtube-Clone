@@ -1,5 +1,6 @@
  <script lang="ts">
 	import ChannelInfo from "$lib/components/ChannelInfo.svelte";
+	import Comments from "$lib/components/Comments.svelte";
 	import VideoDescription from "$lib/components/VideoDescription.svelte";
 
     let videoId = ''
@@ -18,8 +19,9 @@
     <h1 class="text-xl capitalize font-semibold">
         svelte Rules
     </h1>
-    <div class="flex flex-col md:flex-row gap-5 items-start">
+    <div class="flex-col md:flex-row gap-5 items-start">
         <ChannelInfo/>
         <VideoDescription/>
+        <Comments/>
     </div>
  </div>
