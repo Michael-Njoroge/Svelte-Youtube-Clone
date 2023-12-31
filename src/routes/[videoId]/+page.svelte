@@ -16,14 +16,16 @@
  allowfullscreen
  />
 
- <div class="max-w-[1150px] px-2 w-full mx-auto">
+ <div class="max-w-[1200px] px-2 w-full mx-auto py-2">
     <h1 class="text-xl capitalize font-semibold">
         svelte Rules
     </h1>
-    <div class="flex-col md:flex-row gap-5 items-start">
+    <div class="flex flex-col md:flex-row gap-10 items-start">
+        <div class="flex1">
         <ChannelInfo/>
         <VideoDescription/>
         <Comments/>
-    </div>
+        </div>
     <RecommendedVideos/>
+    </div>
  </div>
