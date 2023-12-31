@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { formatLargeNumber } from "$lib/utils";
+
     export let title:string
     export let publishedTimeText:string
     export let views:number
@@ -21,7 +23,7 @@
             <p class="text-gray-600 capitalize text-sm mt-1">{channelName}</p>
             <div class="text-gray-600 text-sm">
                 <span>
-                <p>{views} views</p>
+                <p>{formatLargeNumber(views)} views</p>
                 </span>
                 
                 <span>

@@ -22,14 +22,11 @@
                     </h1>
                     <div class="mt-5 space-y-5 flex flex-col">
                         {#each filterGroup.filters as filter }
-                            <button on:click={() => {
+                        <button on:click={() => {
                                 const searchParams = new URLSearchParams($page.url.search)
                                 searchParams.set('filters',filter.cursorSelect)
                                 goto(`?${searchParams.toString()}`)
-                            }} class="font-medium text-xs capitalize"                             class:text-black={filter.selected}
-                            class:text-gray-700={!filter.selected}
-                            >{filter.label}
-
+                            }} class="font-medium text-xs capitalize" class:text-black={filter.selected} class:text-gray-700={!filter.selected}>{filter.label}
                         </button>
                         {/each}
                     </div>
