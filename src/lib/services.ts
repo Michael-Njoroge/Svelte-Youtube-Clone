@@ -55,3 +55,18 @@ export const getVideoDetails =async (id:string) => {
         })
     }    
 }
+
+export const getVideoComments =async (id:string) => {
+    try {
+        const result = await axios('video/comments/',{
+            params:{
+                id
+            }
+        })
+        return result.data
+    } catch (e) {
+        throw error(500,{
+            message: 'an error occurred'
+        })
+    }    
+}
