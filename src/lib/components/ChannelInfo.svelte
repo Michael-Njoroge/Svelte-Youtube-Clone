@@ -26,7 +26,6 @@
                 </button>
                 <button class="hover:bg-gray-200 py-2 px-4 flex items-center gap-2">
                     <img src="/icons/dislikeIcon.svg" alt="">
-                    <span class="text-sm font-medium">3000</span>
                 </button>
             </div>
             <button class="hover:bg-gray-200 py-2 px-4 flex rounded-full items-center gap-2">
