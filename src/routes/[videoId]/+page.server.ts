@@ -1,12 +1,12 @@
-import { getRelatedContent, getVideoComments, getVideoDetails } from '$lib/services.js';
+import { getRelatedContent, getVideoComments, getVideoDetails } from '$lib/services';
 
 export const load = async ({params}) => {
-    const {videId} = params
+    const {videoId} = params
     return {
-        details: await getVideoDetails(videId),
+        details: await getVideoDetails(videoId),
         streamed:{
-            comments: await getVideoComments(videId),
-            relatedContent: await getRelatedContent(videId)
+            comments: await getVideoComments(videoId),
+            relatedContent: await getRelatedContent(videoId)
         }
     }
 };

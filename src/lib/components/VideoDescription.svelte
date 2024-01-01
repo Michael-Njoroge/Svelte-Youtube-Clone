@@ -5,7 +5,7 @@
 
     export let desc:string
     export let views:number
-    export let publishDate:string
+    export let publishedDate:string
 </script>
 
 <div
@@ -14,7 +14,7 @@
   class="bg-gray-200 group mb-5 relative overflow-hidden text-sm rounded-lg hover:bg-gray-300 p-3"
 >
     <div class="font-medium mb-2">
-        <span>{formatLargeNumber(views)}views .{publishDate}</span>
+        <span>{formatLargeNumber(views)}views .{publishedDate}</span>
     </div>
     <p class="mb-5">
 {desc}    </p>
