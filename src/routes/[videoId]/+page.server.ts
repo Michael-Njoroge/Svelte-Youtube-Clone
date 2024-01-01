@@ -1,4 +1,4 @@
-import { getRelatedContent, getVideoComments, getVideoDetails } from '$lib/services';
+import { getRelatedContent, getVideoComments, getVideoDetails } from '$lib/services.js';
 
 export const load = async ({params}) => {
     const {videoId} = params
