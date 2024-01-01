@@ -20,7 +20,7 @@ export const getHomepage =async () => {
         return result.data.contents
     } catch (e) {
         throw error(500,{
-            message: 'an error occured'
+            message: 'an error occurred'
         })
     }    
 }
@@ -36,7 +36,22 @@ export const getSearch =async ({query,filter}:{query:string; filter:string}) => 
     return result.data
     } catch (e) {
         throw error(500,{
-            message: 'an error occured'
+            message: 'an error occurred'
         })
-    }  
+    }    
+}
+
+export const getVideoDetails =async (id:string) => {
+    try {
+        const result = await axios('video/details/',{
+            params:{
+                id
+            }
+        })
+        return result.data
+    } catch (e) {
+        throw error(500,{
+            message: 'an error occurred'
+        })
+    }    
 }
