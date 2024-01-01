@@ -1,5 +1,6 @@
 <script lang="ts">
 	import RecommendedVideoCard from "./RecommendedVideoCard.svelte";
+    export let recommendedVideos
 
 </script>
 
