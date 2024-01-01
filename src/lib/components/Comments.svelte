@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CommentsCard from "./CommentsCard.svelte";
+    export let commentsData
 
 
 </script>
